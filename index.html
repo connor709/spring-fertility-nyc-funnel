@@ -1,0 +1,219 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spring Fertility NYC | Personalized Fertility Quiz Funnel</title>
+  <meta name="description" content="URL Source: http://springfertility.com/" />
+  <style>
+    :root {
+      --brand-primary: #20B2DE;
+      --brand-secondary: #1E1E1E;
+      --brand-bg: #F7FAFC;
+      --brand-text: #1B1E23;
+      --white: #ffffff;
+      --heading-font: Butler, Georgia, serif;
+      --body-font: -apple-system, Arial, sans-serif;
+      --radius: 14px;
+      --shadow: 0 14px 30px rgba(0,0,0,.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: var(--body-font);
+      color: var(--brand-text);
+      background: radial-gradient(circle at 10% 10%, color-mix(in srgb, var(--brand-primary) 8%, white), white 35%), var(--brand-bg);
+      line-height: 1.6;
+    }
+    .container { width: min(1120px, 92vw); margin: 0 auto; }
+    .nav { position: sticky; top: 0; z-index: 20; background: rgba(255,255,255,.9); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(0,0,0,.06); }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+    .logo { height: 44px; width: auto; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; border: 0; border-radius: 10px; padding: 12px 20px; font-weight: 700; cursor: pointer; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+    .btn-primary { background: var(--brand-primary); color: #fff; box-shadow: var(--shadow); }
+    .btn-primary:hover { transform: translateY(-1px); background: var(--brand-secondary); }
+
+    .hero { padding: 52px 0 24px; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 30px; align-items: center; }
+    h1,h2,h3 { font-family: var(--heading-font); line-height: 1.15; margin: 0 0 14px; }
+    h1 { font-size: clamp(2rem, 4vw, 3.2rem); }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.3rem); }
+    .sub { font-size: clamp(1rem, 2vw, 1.2rem); opacity: .9; margin-bottom: 18px; }
+    .badge { display: inline-block; padding: 7px 12px; border-radius: 999px; background: color-mix(in srgb, var(--brand-primary) 14%, white); color: var(--brand-primary); font-weight: 700; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; }
+    .hero-card { background: #fff; border-radius: var(--radius); box-shadow: var(--shadow); padding: 20px; border: 1px solid rgba(0,0,0,.05); }
+    .hero-media { width: 100%; border-radius: 12px; object-fit: cover; max-height: 430px; }
+
+    .section { padding: 56px 0; }
+    .section.alt { background: #fff; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    .card { background: #fff; border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); border: 1px solid rgba(0,0,0,.05); }
+
+    .quiz { background: linear-gradient(145deg, color-mix(in srgb, var(--brand-primary) 10%, white), #fff); border-radius: 18px; padding: 24px; border: 1px solid rgba(0,0,0,.05); }
+    .quiz-progress { height: 8px; border-radius: 999px; background: rgba(0,0,0,.08); overflow: hidden; margin-bottom: 18px; }
+    .quiz-progress > div { height: 100%; width: 0; background: var(--brand-primary); transition: width .25s ease; }
+    .option { width: 100%; text-align: left; margin: 8px 0; background: #fff; border: 1px solid rgba(0,0,0,.12); border-radius: 10px; padding: 12px 14px; cursor: pointer; }
+    .option:hover { border-color: var(--brand-primary); }
+    .hidden { display: none; }
+
+    .footer { padding: 28px 0 46px; text-align: center; color: color-mix(in srgb, var(--brand-text) 65%, white); }
+    .fade { animation: fade .5s ease; }
+    @keyframes fade { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
+
+    @media (max-width: 900px) {
+      .hero-grid, .grid-3 { grid-template-columns: 1fr; }
+      .nav-inner { gap: 10px; }
+      .logo { height: 36px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="https://springfertility.com" target="_blank" rel="noopener noreferrer">
+        <img class="logo" src="https://springfertility.com/wp-content/uploads/2023/12/spring_logo_redesign.svg" alt="Spring Fertility NYC logo" />
+      </a>
+      <a class="btn btn-primary" href="#quiz">Take The 2-Min Assessment</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="fade">
+          <span class="badge">Built For Spring Fertility NYC Patients</span>
+          <h1>###### Whether you’re trying to conceive now and want to learn more about fertility treatments or are interested in preserving your fertility through egg or embryo freezing, we’re here for you.</h1>
+          <p class="sub">URL Source: http://springfertility.com/</p>
+          <a class="btn btn-primary" href="#quiz">Get Your Personalized Plan</a>
+          <p style="margin-top:14px;font-size:14px;opacity:.8;">Voice match: Clinical, evidence-led, and authoritative</p>
+        </div>
+        <div class="hero-card fade">
+          <img class="hero-media" src="https://springfertility.com/wp-content/uploads/2025/05/SpringBAC.png" alt="Spring Fertility NYC" />
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>As Seen In Leading Fertility Care Conversations</h2>
+        <p style="max-width:760px;">We use cookies to enhance your browsing experience, serve personalized ads or content, and analyse our traffic.</p>
+        <div class="grid-3">
+          <div class="card">We use cookies to enhance your browsing experience, serve personalized ads or content, and analyse our traffic.</div>
+          <div class="card">Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.</div>
+          <div class="card">[FOR PATIENTS](https://springfertility.com/for-patients/)|[971-429-6000](tel:971-429-6000)</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>The Problem Most Patients Face</h2>
+        <p>Too many people start treatment without a clear sequence: what to do first, what to avoid, and how to prioritize time and budget. This funnel helps qualify where you are now and routes you to the right next step with Spring Fertility NYC.</p>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>The Spring Fertility NYC Approach</h2>
+        <p>URL Source: http://springfertility.com/</p>
+        <div class="grid-3">
+          <div class="card"><strong>Step 1:</strong> Clinical intake and timeline mapping.</div>
+          <div class="card"><strong>Step 2:</strong> Match treatment path to your goals and constraints.</div>
+          <div class="card"><strong>Step 3:</strong> Execute with milestone-based support.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>What Patients Say</h2>
+        <div class="grid-3">
+          <div class="card">"We use cookies to enhance your browsing experience, serve personalized ads or content, and analyse our traffic."<br/><br/><strong>- Patient testimonial source: public site copy</strong></div>
+          <div class="card">"Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors."<br/><br/><strong>- Patient testimonial source: public site copy</strong></div>
+          <div class="card">"**Join our IVF &amp; Fertility Care info session on 6/5 [LEARN MORE ![Image 12](blob:http://localhost/f744b2047edb804ede12fb4fdfdbf311)](https://www.eventbrite.com/e/webinar-ivf-fertility-care-info-session-tickets-1344234795459?aff=ebdsoporgprofile)**"<br/><br/><strong>- Patient testimonial source: public site copy</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="quiz">
+      <div class="container">
+        <h2>Get the Fertility Readiness Blueprint</h2>
+        <p>Answer 6 quick questions and receive a customized treatment-readiness summary by email.</p>
+        <div class="quiz">
+          <div class="quiz-progress"><div id="progress"></div></div>
+          <h3 id="qText"></h3>
+          <div id="options"></div>
+          <div id="capture" class="hidden">
+            <p><strong>Your plan is ready.</strong> Enter your details to view the next-step recommendation.</p>
+            <form onsubmit="event.preventDefault(); alert('Thanks! Your personalized plan has been requested.');">
+              <input required placeholder="First Name" style="width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:10px;" />
+              <input required type="email" placeholder="Email" style="width:100%;padding:10px;margin:6px 0;border:1px solid #ccc;border-radius:10px;" />
+              <button class="btn btn-primary" type="submit">Send My Plan</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Offer and Pricing</h2>
+        <div class="card">$0 • $245</div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <h2>About Spring Fertility NYC</h2>
+        <p>Spring Fertility offers patient-centric, compassionate, flexible care for IVF, egg and embryo freezing, genetic testing, and LGBTQ+ family-building services.</p>
+        <p><strong>Website:</strong> <a href="https://springfertility.com" target="_blank" rel="noopener noreferrer">springfertility.com</a></p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container" style="text-align:center;">
+        <h2>Ready for a Clear Next Step?</h2>
+        <p>Book a consultation with Spring Fertility NYC and get a tailored fertility action plan.</p>
+        <a class="btn btn-primary" href="https://springfertility.com" target="_blank" rel="noopener noreferrer">Book / Apply</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    Funnel generated from publicly available data for Spring Fertility NYC. Verify medical claims and legal copy before ad deployment.
+  </footer>
+
+  <script>
+    const questions = [
+      {q: 'What best describes your current goal?', o: ['Egg freezing', 'IVF now', 'Donor options', 'Still exploring']},
+      {q: 'How soon do you want to start?', o: ['0-3 months', '3-6 months', '6+ months', 'Unsure']},
+      {q: 'Have you done prior treatment?', o: ['No', 'Yes, IUI', 'Yes, IVF', 'Multiple attempts']},
+      {q: 'What is your top concern?', o: ['Success rates', 'Cost clarity', 'Timeline', 'Care experience']},
+      {q: 'Preferred care style?', o: ['Highly clinical', 'Balanced', 'High-touch concierge', 'Not sure']},
+      {q: 'Are you ready for a consultation?', o: ['Yes', 'Need more info', 'Need partner alignment', 'Maybe soon']}
+    ];
+
+    let step = 0;
+    const qText = document.getElementById('qText');
+    const options = document.getElementById('options');
+    const progress = document.getElementById('progress');
+    const capture = document.getElementById('capture');
+
+    function render() {
+      if (step >= questions.length) {
+        qText.textContent = 'Great. Your personalized pathway is ready.';
+        options.innerHTML = '';
+        capture.classList.remove('hidden');
+        progress.style.width = '100%';
+        return;
+      }
+      capture.classList.add('hidden');
+      const item = questions[step];
+      qText.textContent = item.q;
+      options.innerHTML = item.o.map(o => <button class="option" type="button">${o}</button>).join('');
+      options.querySelectorAll('button').forEach(btn => btn.addEventListener('click', () => { step += 1; render(); }));
+      progress.style.width = ((step / questions.length) * 100) + '%';
+    }
+    render();
+  </script>
+</body>
+</html>
